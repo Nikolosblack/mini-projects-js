@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <title>Starbucks Landing Page</title>
+</head>
+<body>
+   <section>
+      <div id="circle"></div>
+      <header class="header">
+         <a  href="#"><img class="logo" src="images/logo.png"></a>
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">What`s New</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>
+      </header>
+      <div class="content">
+         <div class="textBox">
+            <h2>It`s not just coffee<br>It`s<span> Starbucks</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae qui iure voluptate quo magni quas a, laborum eveniet asperiores excepturi dolore aliquam quisquam illo, architecto dicta saepe suscipit. Ducimus, officiis?</p>
+            <a href="#">Learn More</a>
+         </div>
+         <div class="imgBox">
+            <img id="starbucks" src="images/img1.png" alt="">
+         </div>
+      </div>
+      <ul class="thumb">
+         <li id="slider"><img src="images/thumb1.png"></li>
+         <li id="slider1"><img src="images/thumb2.png"></li>
+         <li id="slider2"><img src="images/thumb3.png"></li>
+      </ul>
+      <ul class="sci">
+         <li><a href=""><img src="images/facebook.png"></a></li>
+         <li><a href=""><img src="images/instagram.png"></a></li>
+         <li><a href=""><img src="images/twitter.png"></a></li>
+      </ul>
+   </section>
+   <script type="text/javascript">
+      document.getElementById("slider").addEventListener("click", function(){
+         document.getElementById("starbucks").src="images/img1.png"
+         document.getElementById("circle").style.backgroundColor = "#017143";
+      });
+      document.getElementById("slider1").addEventListener("click", function(){
+         document.getElementById("starbucks").src="images/img2.png"
+         document.getElementById("circle").style.backgroundColor = "#eb7495";
+      });
+      document.getElementById("slider2").addEventListener("click", function(){
+         document.getElementById("starbucks").src="images/img3.png"
+         document.getElementById("circle").style.backgroundColor = "#d752b1";
+      });
+   </script>
+</body>
+</html>
