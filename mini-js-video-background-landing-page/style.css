@@ -1,0 +1,72 @@
+:root {
+   --white: #ffffff;
+ }
+* {
+   margin: 0;
+   padding: 0;
+}
+.header {
+   min-height: 100vh;
+   position: relative;
+   display: grid;
+   place-items: center;
+ }
+ .video-container {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: -2;
+ }
+ h1 {
+   color: white;
+ }
+ /* switch button */
+ 
+ .switch-btn {
+   position: absolute;
+   bottom: 5%;
+   width: 7rem;
+   height: 2rem;
+   display: flex;
+   border-radius: 8px;
+   align-items: center;
+   justify-content: space-around;
+   border: none;
+   transition: all .3 linear;
+ }
+ .switch-btn span {
+   display: inline-block;
+   font-size: 0.85rem;
+   cursor: pointer;
+   text-transform: capitalize;
+   color: black;
+ }
+ .switch {
+   position: absolute;
+   width: 50%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background: grey;
+   border-radius: 8px;
+   margin: 0;
+   display: block;
+   transition: all .3s linear;
+ }
+ .slide .switch {
+   left: 50%;
+ }
+ /* header after */
+ header::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.7);
+   z-index: -1;
+ }
