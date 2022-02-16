@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Calendar</title>
+</head>
+<body>
+   <div class="calendar">
+      <div class="calendar-body">
+         <span class="month-name"></span>
+         <span class="day-name"></span>
+         <span class="date-number"></span>
+         <span class="year"></span>
+         <span id="time_span"></span>
+      </div>
+   </div>
+   <script type="text/javascript">
+      const dayNumber = new Date().getDate();
+      const year = new Date().getFullYear();
+      const dayName = new Date().toLocaleString("default", {weekday: "long"});
+      const monthName = new Date().toLocaleString("default", {month: "long"});
+
+      timer();
+      function timer(){
+      var currentTime = new Date()
+      var hours = currentTime.getHours()
+      var minutes = currentTime.getMinutes()
+      var sec = currentTime.getSeconds()
+      if (minutes < 10){
+         minutes = "0" + minutes
+      }
+      if (sec < 10){
+         sec = "0" + sec
+      }
+      var t_str = hours + ":" + minutes + ":" + sec + " ";
+      if(hours > 11){
+         t_str += "PM";
+      } else {
+         t_str += "AM";
+      }
+      document.getElementById('time_span').innerHTML = t_str;
+      setTimeout(timer,1000);
+      }
+      
+      document.querySelector(".month-name").innerHTML = monthName;
+      document.querySelector(".day-name").innerHTML = dayName;
+      document.querySelector(".date-number").innerHTML = dayNumber;
+      document.querySelector(".year").innerHTML = year;
+      </script>
+</body>
+</html>

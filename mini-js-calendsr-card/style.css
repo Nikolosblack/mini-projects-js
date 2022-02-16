@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #051320;
+}
+
+.calendar{
+  position: relative;
+  width: 260px;
+}
+
+.calendar:before{
+   display: block;
+   content: '';
+   position: absolute;
+   width: 80px;
+   height: 80px;
+   box-shadow: 206px 208px #fdff00, -35px 78px #003bff , 206px -23px #ff1100, 46px 223px #8700f5;
+   border-radius: 50%;
+   z-index: -1;
+}
+
+.calendar .calendar-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+   -webkit-backdrop-filter: blur(15px);
+  border-bottom: 6px solid #4285F4;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+  
+}
+
+.calendar .calendar-body .month-name{
+  color: #fff;
+  background: #4285F4;
+  width: 100%;
+  font-size: 1.6em;
+  text-align: center;
+  font-weight: 400;
+  padding: 5px 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.calendar .calendar-body .month-name::first-letter {
+   text-transform: uppercase;
+}
+
+.calendar .calendar-body .day-name{
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.calendar .calendar-body .day-name::first-letter{
+ text-transform: uppercase;
+ }
+
+.calendar .calendar-body .date-number{
+  color: #fff;
+  font-size: 6em;
+  font-weight: 600;
+  line-height: 1.2em;
+  -webkit-animation: colorchange 20s infinite alternate;
+}
+@-webkit-keyframes colorchange {
+   0% {
+     color: rgb(253, 0, 0);
+   }
+   10% {
+     color: #b300ff;
+   }
+   20% {
+     color: #00ffcc;
+   }
+   30% {
+     color: #ff6905;
+   }
+   40% {
+     color: rgb(0, 255, 21);
+   }
+   50% {
+     color: #0080ff;
+   }
+   60% {
+     color: blue;
+   }
+   70% {
+     color: #ec0c96;
+   }
+   80% {
+     color: #ffcc00;
+   }
+   90% {
+     color: #ff0000;
+   }
+   100% {
+     color: rgb(252, 90, 117);
+   }
+ }
+
+.calendar .calendar-body .year{
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.calendar .calendar-body #time_span{
+   margin-bottom: 20px;
+   color: #fff;
+   font-size: 14px;
+   font-weight: 400;
+   border: 1px solid white;
+   padding: 5px;
+   width: 150px;
+   border-radius: 4px;
+   text-align: center;
+} 
