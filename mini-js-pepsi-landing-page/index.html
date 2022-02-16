@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <title>Pepsi Landing Page</title>
+</head>
+<body>
+   <section class="sec" id="sec">
+      <header class="header">
+         <a href="#"><img class="logo" src="images/logo.png"></a>
+         <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">What`s New</a></li>
+            <li><a href="">Newsletter</a></li>
+            <li><a href="">Contact</a></li>
+         </ul>
+      </header>
+      <div class="content">
+         <div class="textBox">
+            <h2>That`s What<br><span>I like</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores reiciendis provident in laboriosam quaerat eos corrupti illum eius enim, cupiditate ut repellat ullam voluptate ipsa, dolorem assumenda? Recusandae, distinctio inventore!</p>
+            <a href="#">View All Products</a>
+         </div>
+         <div class="imgBox">
+            <img class="pepsi" id="pepsi" src="images/pepsi001.png">
+         </div>
+      </div>
+      <ul class="thumb">
+         <li id="bg"><img src="images/pepsi001.png"></li>
+         <li id="bg1"><img src="images/pepsi002.png"></li>
+         <li id="bg2"><img src="images/pepsi003.png"></li>
+      </ul>
+      <ul class="sci">
+         <li><a href=""><img src="images/facebook.png"></a></li>
+         <li><a href=""><img src="images/twitter.png"></a></li>
+         <li><a href=""><img src="images/instagram.png"></a></li>
+      </ul>
+   </section>
+   <script type="text/javascript">
+      document.getElementById("bg").addEventListener('click', function() {
+         document.getElementById("sec").style.backgroundColor = "#0062be";
+         document.getElementById("pepsi").src="images/pepsi001.png";
+      });
+      document.getElementById("bg1").addEventListener('click', function() {
+         document.getElementById("sec").style.backgroundColor = "#505050";
+         document.getElementById("pepsi").src="images/pepsi002.png";
+      });
+      document.getElementById("bg2").addEventListener('click', function() {
+         document.getElementById("sec").style.backgroundColor = "#1e1e1e";
+         document.getElementById("pepsi").src="images/pepsi003.png";
+      });
+   </script>
+</body>
+</html>
