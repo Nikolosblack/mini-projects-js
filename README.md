@@ -1,7 +1,7 @@
 # mini-projects-js
 1.Adventure Landing Page https://nikolosblack.github.io/mini-projects-js/mini-js-adventure-landing-page <br>
 2.Calendar https://nikolosblack.github.io/mini-projects-js/mini-js-calendar <br>
-3.Calendsr Card https://nikolosblack.github.io/mini-projects-js/mini-js-calendsr-card <br>
+3.Calendrs Card https://nikolosblack.github.io/mini-projects-js/mini-js-calendsr-card <br>
 4.CocaCola Landing Page https://nikolosblack.github.io/mini-projects-js/mini-js-cocacola-landing-page <br>
 5.Color Generate https://nikolosblack.github.io/mini-projects-js/mini-js-color-generate <br>
 6.Cursor Animation Effects https://nikolosblack.github.io/mini-projects-js/mini-js-cursor-animation-effects <br>
